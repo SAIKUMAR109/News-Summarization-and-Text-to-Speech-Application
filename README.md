@@ -10,14 +10,14 @@ This project is a web-based application that extracts key details from multiple 
 ✅ Performs sentiment analysis to classify news as Positive, Negative, or Neutral.
 ✅ Conducts a comparative sentiment analysis across multiple news sources.
 ✅ Converts the final summary into Hindi speech using gTTS.
-✅ Provides a web-based interface using Streamlit.
+✅ Provides a web-based interface using Gradio.
 ✅ Exposes APIs using FastAPI for backend processing.
 ✅ Deployable on Hugging Face Spaces.
 
 ## Tech Stack
 - **Python**
 - **FastAPI** (Backend APIs)
-- **Streamlit** (Frontend UI)
+- **Gradio** (Frontend UI)
 - **BeautifulSoup** (Web Scraping)
 - **Transformers** (Summarization & NLP)
 - **VADER Sentiment Analyzer**
@@ -46,9 +46,9 @@ pip install -r requirements.txt
 uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 
-### Run Streamlit Frontend
+### Run Gradio Frontend
 ```sh
-streamlit run app.py
+Gradio run app.py
 ```
 
 ## API Endpoints
@@ -84,7 +84,7 @@ curl http://127.0.0.1:8000/news/Tesla
 ## Deployment
 To deploy the application on **Hugging Face Spaces**, follow these steps:
 1. Create a new **Hugging Face Space**.
-2. Select **`Streamlit`** as the framework.
+2. Select **`Gradio`** as the framework.
 3. Upload the project files.
 4. Configure the `requirements.txt`.
 5. Deploy and test the application.
