@@ -1,0 +1,9 @@
+feedparser
+newspaper3k
+langdetect
+transformers
+torch
+keybert
+gradio
+soundfile
+nltk
